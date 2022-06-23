@@ -16,3 +16,18 @@ from django.http import JsonResponse
 
 def load_homepage(request):
     return render(request,'home.html')
+
+
+#sending mail
+@csrf_exempt
+def sending_mail(request):
+    if request.method == 'POST': 
+        recipient = request.POST['smailid'] 
+        message="Your message has been sent. Thank you!"
+        sendsubject="INFOX Technologies"
+        try:
+            respons=send_mail(sendsubject, message,settings.EMAIL_HOST_USER,[recipient])
+            return render(request,'sendmailout.html',{'message':message})
+            
+        except BadHeaderError:
+            return()

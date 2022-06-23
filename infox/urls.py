@@ -8,6 +8,7 @@ from django.contrib import admin
 
 
 urlpatterns =[  path('',views.load_homepage,name='load_homepage'),
+                path('sending_mail',views.sending_mail,name='sending_mail'),
 
 
   ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
