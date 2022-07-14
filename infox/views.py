@@ -16,6 +16,12 @@ from django.http import JsonResponse
 
 def load_homepage(request):
     return render(request,'home.html')
+def load_bease(request):
+    return render(request,'base.html')
+def load_mobile(request):
+    return render(request,'mobile.html')
+def load_csm(request):
+    return render(request,'csm.html')
 
 
 #sending mail

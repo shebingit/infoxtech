@@ -8,6 +8,9 @@ from django.contrib import admin
 
 
 urlpatterns =[  path('',views.load_homepage,name='load_homepage'),
+                path('load_bease',views.load_bease,name='load_bease'),
+                path('load_mobile',views.load_mobile,name='load_mobile'),
+                path('load_csm',views.load_csm,name='load_csm'),
                 path('sending_mail',views.sending_mail,name='sending_mail'),
 
 

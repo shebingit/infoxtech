@@ -6,121 +6,714 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Presento Bootstrap Template</title>
+  <title>INFINITYFOX TECHNOLOGIES</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'img/favicon.png' %}" rel="icon">
-  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'img/logo.jpeg' %}" rel="icon">
+  <link href="{% static 'img/logo.jpeg' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
+<!-- Script File -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 
   <!-- =======================================================
-  * Template Name: Presento - v3.7.0
+  * Template Name: Presento - v1.1.1
   * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+
+
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+  section
+  {
+    margin-top: 0vh;
+  }
+    .service-banner.technology-banner {
+      margin-top: 4vh;
+    }
+    @media (max-width: 991px)
+    {
+    .service-banner.technology-banner {
+      margin-top:3vh;
+      background-image: none;
+      background-color: #f1f1f1;
+      min-height: 340px;
+    }
+}
+
+.tech-content-section {
+    width: 100%;
+    padding-bottom:30px;
+}
+.tech-content-section .tech-block-cover {
+  width: 100%;
+  margin-top: -15px;
+  background-color: #fff;
+}
+.tech-content-section .tech-block-cover .tech-block-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+.tech-content-section .tech-block-img::after {
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url(static/img/hero-bg.jpg);
+}
+.tech-content-section .tech-block-img {
+  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 991px)
+{
+.tech-content-section .tech-block-img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+.tech-content-section .tech-block-img .icon-shape-cover {
+  height: 360px;
+  width: 310px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/hex.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+body {
+  font: 16px/1.4 Arial,Helvetica,sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+  </style>
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="#">infox<span>.</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-10 d-flex align-items-center">
+          <h1 class="logo mr-auto"><a href="home.html"><span><img class="img-fulid" src="{% static 'img/logo.jpeg' %}" class="img-fulid" style="width:30vh;"></span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="{% url 'load_homepage' %}#header">Home</a></li>
+              <li><a href="{% url 'load_homepage' %}#about">About</a></li>
+              <li><a href="{% url 'load_homepage' %}#services">Services</a></li>
+             <!--  <li><a href="#team">Team</a></li>-->
+              <li><a href="{% url 'load_homepage' %}#contact">Contact</a></li>
+            </ul>
+          </nav><!-- .nav-menu -->
 
-      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+          <a href="#about" class="get-started-btn scrollto d-none d-lg-block">Get Started</a>
+        </div>
+      </div>
+
     </div>
   </header><!-- End Header -->
 
+
   <main id="main">
+    
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
+      <br><br><br>
+      <section class="service-banner technology-banner" id="dj">
 
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Inner Page</li>
-        </ol>
-        <h2>Inner Page</h2>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <section class="inner-page">
-      <div class="container" data-aos="fade-up">
-        <p>
-          Example inner page template
-        </p>
-      </div>
+        <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Web Development</h2>
+          <div class="container custom-container service-banner-container">
+                      <div class="service-banner-text-cover">
+                <h1>Rapid and Dynamic Django - Python</h1>
+                <p>Django is an open-source web development framework in Python. The framework was originally developed for a local newspaper in the town of Lawrence, Kansas starting in 2003, by Adrian Holovaty and Simon Willison. The original idea of the framework was to allow the development of complete websites, interfaced with a database, in a very short period. It is used by Spericorn because of its Limitless programming approaches, security, and ease to create complex websites. <br> Spericorn is most preferred Django development company for any complex project because of our rapid but effective development process.</p>
+              </div>
+                  </div>
     </section>
+
+    <div class="tech-content-section">
+			<div class="container custom-container">
+				<div class="tech-block-cover">
+					<div class="row tech-block-wrapper">
+						<div class="col-lg-5 tech-block-img d-flex">
+							<div class="icon-shape-cover">
+								<span class="hex-icon">
+									<img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-2.png" alt="django">
+								</span>
+							</div>
+						</div>
+						<div class="col-lg-7 tech-details-content">
+							<div class="tech-text-cover">
+								<h1 class="tech-title">Django-Python Development </h1>
+								<p></p><p style="text-align: left;">Leveraging the advantages of the powerful and easy-to-learn Python programming language,  <strong><a href="https://en.wikipedia.org/wiki/Django_(web_framework)">Django</a></strong> Being a very popular Python framework, Django is highly chosen for many complex projects involving huge data and media contents.</p>
+<p style="text-align: left;">The main objective of Django is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and pluggability of components, less code, low coupling, rapid development, and the principle of don't repeat yourself (DRY). Python is used even for settings files and data models. Django also enables optional administrative create, read, update and delete an interface that is generated dynamically through introspection and configured via admin models.</p>
+<p style="text-align: left;">Equipped with robust application development,  that make sure the projects are made with all-round perfection. We offer high-quality out-of-box solutions for our clients to deliver projects of world-class standards. Our team of certified Django developers make sure the entire development process progress swiftly keeping a tight check on the quality.</p>
+As a top <em>Django development company in united states</em>, our speciality is the service of certified developers to meet the needs of smaller projects as per client discretion. Due to the great expense for the development process in many places, a number of international clients have chosen Spericorn as their best option to get service from the top offshore Django developers. With exceptional expertise in project handling, our Django – Python developers have an established record of exhibiting great skill and creativity in the projects they handle. Sticking to a prescribed time frame to bring out the best projects is a quality our Django developers display and this has gained the interest of our global clients.<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tech-deatails-cover">
+										<div class="row m-0">
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Quality for Customers</h3>
+										<p>Django being a high-level web framework based on Python caters to quick web project development with transparency and high-quality code writing, making it equally important for developers as well as customers.</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Very Fast Development</h3>
+										<p>Django was designed to take applications from concept to reality as quickly as possible, and our team of certified Django developers help you achieve just that.</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Security and Scalability</h3>
+										<p>Django enables you to quickly scale with high flexibility and without compromising on security.</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Model-view Template architecture</h3>
+										<p>The model view template (MVT) architectural pattern is a software architecture pattern employed by Django that separates data presentation from the logic of handling user interactions that saves you time and stress. It is also one of the best ways to create client-server applications.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Versatility</h3>
+										<p>The versatility of Django being based on Python makes it efficiently manage all aspects of content management, scientific computing platforms, and even big organizations.</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Best Suited for MVP design</h3>
+										<p>More and more startups nowadays choose the MVP (minimum viable product) model to develop their product initially, and Django is the best solution to create an MVP that can easily be scaled up in future because it comes fully featured, right out of the box.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Admin Interface</h3>
+										<p>A simple and fully featured admin interface is crucial to your business and Django can provide you this with ease.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Supports High-load Projects</h3>
+										<p>Since Django is based on Python, it enables fast loading pages and quick data processing and hence there are many high-load projects that rely on Django - Python in particular to provide users with stable, fast access.</p>
+									</div>
+								</div>
+													</div>
+				 
+
+										<div class="row m-0">
+						<div class="adv-title col-12">
+							<div class="adv-title">
+								<h3>Advantges</h3>
+							</div>
+						</div>
+
+													<div class="col-lg-4 col-md-6 tech-deatails-block">
+								<div class="tech-deatails-card">
+									<h3>Batteries Included Web Framework</h3>
+									<p>Django is Python’s Framework which receives the batteries included process. It provides the code which always works like database controllers, URL routing, Html templating, session management, and security.</p>
+								</div>
+							</div>
+													<div class="col-lg-4 col-md-6 tech-deatails-block">
+								<div class="tech-deatails-card">
+									<h3>Good with Major Operating System and Database</h3>
+									<p>Django upgraded their availability of web applications by supporting various operating systems like Windows, macOS, and Linux. Django offers ORM Framework and makes it easily available for engineers, to work with broadly utilized Database</p>
+								</div>
+							</div>
+													<div class="col-lg-4 col-md-6 tech-deatails-block">
+								<div class="tech-deatails-card">
+									<h3>Scalable</h3>
+									<p>Django can easily scale, expand, and redo the Web structure by rolling out an improvement to its decoupled segments. They have an advancement feature of extensive and complex web applications by wiring up the segments.</p>
+								</div>
+							</div>
+													<div class="col-lg-4 col-md-6 tech-deatails-block">
+								<div class="tech-deatails-card">
+									<h3>Problem and Solutions of Django (Python) <br> Can’t manage different requests at the same time</h3>
+									<p>Django is slightly different from other web frameworks, does not empower individual procedures to deal with numerous requests at the same time. Our developers investigate approaches for a single procedure to control various requests proficiently and rapidly at once time.</p>
+								</div>
+							</div>
+											</div>
+									</div>
+			</div>
+		</div>
+
+
+  <section class="service-banner technology-banner" id="java">
+    <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Web Development</h2>
+    <div class="container custom-container service-banner-container">
+                <div class="service-banner-text-cover">
+          <h1>Versatile and Robust Java</h1>
+          <p>Java is an object-oriented programming language created by James Gosling and Patrick Naughton, dedicated employees of Sun Microsystems, with the help of Bill Joy (co-founder of Sun Microsystems in 1982), presented officially on May 23, 1995, at SunWorld. The Sun company was then acquired in 2009 by the Oracle company which now owns and maintains Java. It was invented as a language for digital devices such as televisions, set-top boxes, etc later it is used in mobile devices, games, internet programming, etc. Spericorn decided to show trust in JAVA due to its great and commendable performance inspired by C and C++ and its multithreading capability. In addition to this various other reasons makes JAVA a perfect choice like its robust, secure, and simple feature, independent and multi-platform support. <br>Spericorn is the top Java development company with a ‘no-compromise’ approach towards quality.</p>
+        </div>
+            </div>
+  </section>
+
+  <div class="tech-content-section">
+    <div class="container custom-container">
+      <div class="tech-block-cover">
+        <div class="row tech-block-wrapper">
+          <div class="col-lg-5 tech-block-img d-flex">
+            <div class="icon-shape-cover">
+              <span class="hex-icon">
+                <img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-9.png" alt="">
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-7 tech-details-content">
+            <div class="tech-text-cover">
+              <h1 class="tech-title">Java Development Company</h1>
+<p style="text-align: left;"><span style="font-weight: 400;">With its ‘write once, run anywhere’ (WORA) methodology, Java is a general-purpose computer programming language that is specifically designed to have as few implementation dependencies as possible. Java is one of the most popular programming languages in use, particularly for client-server web applications as its applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. The primary goals of the Java language are for it to be simple, object-oriented, and familiar; robust and secure; architecture-neutral and portable; high performance; and interpreted, threaded, and dynamic.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">A key feature in Java’s design is security and it is characterized for safe programming which is free of corruption or infection. Taking advantage of the multifaceted characters of the technology, Spericorn has positioned itself as a top Java development company that uses the language to successfully facilitate a number of development process including desktop GUI applications, embedded systems, web applications, front and back office electronic trading systems, settlement and confirmation systems, data processing projects, and much more.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Jav<em>a</em></a><em> development company in united states,</em>&nbsp; are galore but what sets Spericorn apart is the ‘no-compromise’ approach towards the quality of our services. Being a top Java development company, we have a good talent pool of expert Java developers who can cater to our client’s customised needs.</span></p><p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-deatails-cover">
+                  <div class="row m-0">
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Cross-Functionality and Portability</h3>
+                  <p>As programs written in one platform can run across desktops, mobiles, embedded systems and others, Java offers higher cross-functionality and portability.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Mature and Stable</h3>
+                  <p>Over the years, Java has evolved to be a mature language and hence more stable and predictable.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Huge Community Support</h3>
+                  <p>Java has a large active user community and support available since it is highly popular at the enterprise embedded and network levels.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Object Oriented</h3>
+                  <p>Java allows developers to create modular programs and reusable code.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>High Security</h3>
+                  <p>The Java language, compiler, interpreter, and runtime environment were each developed with security as its priority.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Robust and Reliable</h3>
+                  <p>Java puts a lot of emphasis on early checking for possible errors, as Java compilers are able to detect many problems that would first show up during execution time in other languages.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Architectural Neutral	</h3>
+                  <p>As Java can run on any available processors in the real world; it is said to be architectural neutral. 
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Multithreaded</h3>
+                  <p>Java is smoothly integrated with multithreaded programming capability and hence can perform several tasks simultaneously within a program.
+</p>
+                </div>
+              </div>
+                        </div>
+       
+
+                </div>
+    </div>
+  </div>
+
+
+  <section class="service-banner technology-banner" id="angularjs">
+    <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Web Development</h2>
+    <div class="container custom-container service-banner-container">
+                <div class="service-banner-text-cover">
+          <h1>Creative and Intuitive AngularJS</h1>
+          <p>AngularJS is founded on the idea that declarative programming should be used to build user interfaces and wiring software components, while imperative programming excels at expressing business logic in 2009. It was supposed to be software that manipulated data in JSON format (independent of the web). It was created to resolve Google-scale problems. It is used by Spericorn because it allows us to bind the data and customizable features. <br>Spericorn is a top AngularJS development company that ensures its clients with creative and innovative app experiences.  </p>
+        </div>
+            </div>
+  </section>
+
+  <div class="tech-content-section">
+    <div class="container custom-container">
+      <div class="tech-block-cover">
+        <div class="row tech-block-wrapper">
+          <div class="col-lg-5 tech-block-img d-flex">
+            <div class="icon-shape-cover">
+              <span class="hex-icon">
+                <img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-10.png" alt="angularjs development company in united states">
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-7 tech-details-content">
+            <div class="tech-text-cover">
+              <h1 class="tech-title">AngularJS Development </h1>
+              <p>&nbsp;
+</p><p style="text-align: left;"><span style="font-weight: 400;">AngularJS is a JavaScript-based front-end web application and being one of the best <strong>AngularJS development company in United States</strong>, we&nbsp; address many of the challenges encountered in developing single-page applications. The JavaScript components support Apache Cordova, a framework used for developing cross-platform mobile apps.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">As a leading <em>AngularJS development company in united states</em>, <a href="https://www.spericorn.com/">Spericorn</a> blends the best of creativity and innovation to deliver unique application experiences to our clients. We approach each scenario in our own unique way, incorporating knowledge and ideas to get perfection for each of the projects handled. As a much sought-after <a href="https://en.wikipedia.org/wiki/AngularJS">AngularJS</a> development company, we provide quality services to our clients from various business sectors around the world.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">As developers won’t require much time to code the entire application, creating new web apps with AngularJS is so easy and quick with less effort, making it a much-preferred software with Angular development companies to enhance the features to any extent which the client requires.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Spericorn is an Angular JS development company that excels in their tasks with immense dedication and great expertise. Our developers create highly user-friendly web products which are fast and responsive. The interactive interface lets the users get more interested and spends more time on the website, thus familiarizing more with your website and thereby opening up more chances of revenue generation for you.</span></p><p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-deatails-cover">
+                  <div class="row m-0">
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Lesser Time-to-market</h3>
+                  <p>Creating new web apps with AngularJS is very easy developers can easily get started with it, thereby enabling lesser time-to-market for your app.</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Efficiency</h3>
+                  <p>Since developers have to spend lesser time writing codes, with AngularJS they can focus more on the efficiency of the application.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Reusable Codes</h3>
+                  <p>The code reusability helps developers to save time and makes AngularJS a unique and much-preferred framework for them.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Two-way Data Binding</h3>
+                  <p>The two-way data binding feature of AngularJS makes it a unique software for developers to build impressive and unique web applications with ease.</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3> Improved Server Health</h3>
+                  <p>AngularJS supports caching and many other processes and hence reduces the burden on server CPUs, which means that the server performs extremely well.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Declarative UI</h3>
+                  <p>AngularJS makes use of HTML to define apps UI and hence app development is simplified. You just need to characterize the necessities and let AngularJS do alternate occupations of an interface.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Rapid Front-end Development</h3>
+                  <p>Since AngularJS does not need any other plugins or frameworks, it is a comprehensive solution for rapid front-end development.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Easy to Test</h3>
+                  <p>AngularJS provides support to both end-to-end and unit testing, thereby making the testing easy and flexible at any level of development.
+</p>
+                </div>
+              </div>
+                        </div>
+       
+
+                </div>
+    </div>
+  </div>
+
+
+  <section class="service-banner technology-banner" id="react">
+    <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Web Development</h2>
+    <div class="container custom-container service-banner-container">
+                <div class="service-banner-text-cover">
+          <h1>Responsive and Fast ReactJS</h1>
+          <p>React (also called React.js or ReactJS) is a free JavaScript library created by Jordan Walke, an engineer at the Facebook company at the end of 2011. Pete Hunt, an engineer working on Instagram is interested in the library and is assisting Walk in removing the dependent portions of Facebook. This allows React to be released under the Apache 2.0 license on May 29, 2013. It was developed to overcome the issue of code maintenance. Spericorn adopted ReactJS due to its native approach, data binding features, simple and easy to learn character. <br>Partner with the best ReactJS development company to scale the advantages of a fast and responsive user interface for your business.  </p>
+        </div>
+            </div>
+  </section>
+
+  <div class="tech-content-section">
+    <div class="container custom-container">
+      <div class="tech-block-cover">
+        <div class="row tech-block-wrapper">
+          <div class="col-lg-5 tech-block-img d-flex">
+            <div class="icon-shape-cover">
+              <span class="hex-icon">
+                <img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-5.png" alt="react native development company in united states">
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-7 tech-details-content">
+            <div class="tech-text-cover">
+              <h1 class="tech-title">ReactJS Development</h1>
+<p style="text-align: left;"><span style="font-weight: 400;"><a href="https://en.wikipedia.org/wiki/React_(web_framework)">ReactJS</a>, unlike many other applications building software, does not provide a complete ‘application framework’ and is designed specifically for creating user interfaces alone. ReactJS being one of the most preferred JavaScript models, we implement it with great expertise and innovation to design user interfaces for your business with great visual and responsive components.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Having delivered top-notch solutions to our clients from diverse industry sectors, we are proud to decorate a spot among the leading global ReactJS development companies with unparalleled quality assurance.</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-deatails-cover">
+                  <div class="row m-0">
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Easy to Implement</h3>
+                  <p>React JS comes loaded with a good supply of documentation and tutorials making it easy for a developer to use it within no time and start working on your project.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3> Faster Rendering</h3>
+                  <p>The Virtual DOM feature of ReactJS gives it the edge to render even heavy-loaded and dynamic software quickly.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Reusable Components</h3>
+                  <p>Code re-use helps experts make your apps easier to develop and easier to maintain. It also helps developers maintain a consistent look and feel across the entire project.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Data Binding</h3>
+                  <p>The uses of one-way data binding and an app architecture called Flux to control the flow of data to components through one control point makes it easier to debug self-contained components of large ReactJS apps.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Native Approach</h3>
+                  <p>‘React Native’ can be used to build mobile apps, extensive code reusability makes it ideal to create iOS, Android and Web applications at the same time.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3> Code Stability</h3>
+                  <p>ReactJS uses only the downward data flow methodology that ensures code stability and continuous app performance.
+</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>SEO- friendly</h3>
+                  <p>ReactJS is SEO friendly with its ability to run on the server, rendering and returning the virtual DOM to the browser as a regular webpage.</p>
+                </div>
+              </div>
+                            <div class="col-lg-4 col-md-6 tech-deatails-block">
+                <div class="tech-deatails-card">
+                  <h3>Easy to Test</h3>
+                  <p>Because ReactJS uses pure components, developers end up writing reusable code that's super easy to test, which leads to better application architecture.
+</p>
+                </div>
+              </div>
+                        </div>
+       
+
+                </div>
+    </div>
+  </div>
+
+
+  <section class="service-banner technology-banner" id="php">
+    <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Web Development</h2>
+			<div class="container custom-container service-banner-container">
+									<div class="service-banner-text-cover">
+						<h1>Speedy and Stable PHP</h1>
+						<p>It is a free " programming language ", mainly used to produce dynamic web pages via an HTTP server but can also function like any other language. PHP is an object- oriented imperative language. The PHP language was created by Rasmus Lerdorf in 1994 for his website. It was invented to accelerate the bug reporting and to improve code. There are several reasons why Spericorn decided to include PHP in its technology stack, its free of cost service, its interaction with a lot of database languages and also easy to set up features. <br>Make benefit of the best PHP development company for a stable and dynamic web solution for your company.</p>
+					</div>
+							</div>
+		</section>
+    <div class="tech-content-section">
+			<div class="container custom-container">
+				<div class="tech-block-cover">
+					<div class="row tech-block-wrapper">
+						<div class="col-lg-5 tech-block-img d-flex">
+							<div class="icon-shape-cover">
+								<span class="hex-icon">
+									<img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-6.png" alt="">
+								</span>
+							</div>
+						</div>
+						<div class="col-lg-7 tech-details-content">
+							<div class="tech-text-cover">
+								<h1 class="tech-title">PHP Development</h1>
+<p style="text-align: left;"><span style="font-weight: 400;"><a href="https://en.wikipedia.org/wiki/PHP">PHP</a> is an open-source general-purpose scripting language that is widely used for web development and can be embedded into HTML. What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client, who would receive the results of running that script.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">PHP is extremely simple to learn for a newcomer, but also offers many advanced features for professional programmers in PHP development companies. Although PHP's development is focused on server-side scripting, much more can be achieved with it. Also, PHP can be used on all major operating systems, including Linux, many Unix variants, Microsoft Windows, iOS, and probably others. PHP also has support for most of the web servers today, and so with PHP, you have the freedom of choosing any operating system and a web server.</span></p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tech-deatails-cover">
+										<div class="row m-0">
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Speedy Custom Web Apps</h3>
+										<p>The supply of tools, features, and code snippets by PHP frameworks help developers to accelerate custom web application development.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>No Additional Codes</h3>
+										<p>The code generation features provided by certain PHP frameworks reduce coding time significantly and enable programmers to keep the source code of web application clean and maintainable.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Dynamic</h3>
+										<p>PHP works in a combination with HTML to display dynamic elements on the page.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Cross-platform Compatibility</h3>
+										<p>PHP can be used with a large number of database management systems, runs on most of the popular web servers and is available for many different operating systems.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Fast</h3>
+										<p>A quick loading website is always appreciated by all and PHP is preferred by many developers for the important fact that it helps in the fast rendering of web pages.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Stable</h3>
+										<p>Since PHP is open-source, many enthusiastic developers work together to fix the various bugs and hence it's a stable programming language.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Simplify Maintenance</h3>
+										<p>Leveraging on the model-view-controller (MVC) architecture, PHP frameworks simplify web application development and maintenance.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Scalable</h3>
+										<p>The multiple extensions available in PHP makes it extremely scalable. When you hire our PHP developers, they ensure that the results are measurable.
+</p>
+									</div>
+								</div>
+													</div>
+				 
+
+									</div>
+			</div>
+		</div>
+
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Presento<span>.</span></h3>
+            <h3>INFINITYFOX<span></span></h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+                2nd floor, Carnival<br>
+                phase 1 Infopark<br> 
+                Kakanad, Kochi,
+                kerala
+                Pin 682042 <br><br>
+              <strong>Phone:</strong> <br>
+              <strong>Email:</strong>&nbsp;infinityfox@gmail.com
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+          
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
@@ -128,7 +721,6 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -139,20 +731,19 @@
     </div>
 
     <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
+      <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
-          &copy; Copyright <strong><span>Infox</span></strong>. All Rights Reserved
+            
+         <br> &copy; Copyright @ 2022  All Rights Reserved.<strong>&nbsp;&nbsp;Infinityfox Technologies</strong>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -162,16 +753,19 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{% static 'vendor/purecounter/purecounter.js' %}"></script>
-  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
   <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>

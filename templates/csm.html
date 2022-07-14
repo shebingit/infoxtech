@@ -1,0 +1,457 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>INFINITYFOX TECHNOLOGIES</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/logo.jpeg' %}" rel="icon">
+  <link href="{% static 'img/logo.jpeg' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+<!-- Script File -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Presento - v1.1.1
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+
+
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+  section
+  {
+    margin-top: 0vh;
+  }
+    .service-banner.technology-banner {
+      margin-top: 4vh;
+    }
+    @media (max-width: 991px)
+    {
+    .service-banner.technology-banner {
+      margin-top:3vh;
+      background-image: none;
+      background-color: #f1f1f1;
+      min-height: 340px;
+    }
+}
+
+.tech-content-section {
+    width: 100%;
+    padding-bottom:30px;
+}
+.tech-content-section .tech-block-cover {
+  width: 100%;
+  margin-top: -15px;
+  background-color: #fff;
+}
+.tech-content-section .tech-block-cover .tech-block-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+.tech-content-section .tech-block-img::after {
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url(static/img/hero-bg.jpg);
+}
+.tech-content-section .tech-block-img {
+  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 991px)
+{
+.tech-content-section .tech-block-img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+.tech-content-section .tech-block-img .icon-shape-cover {
+  height: 360px;
+  width: 310px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/hex.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+body {
+  font: 16px/1.4 Arial,Helvetica,sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-10 d-flex align-items-center">
+          <h1 class="logo mr-auto"><a href="home.html"><span><img class="img-fulid" src="{% static 'img/logo.jpeg' %}" class="img-fulid" style="width:30vh;"></span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="{% url 'load_homepage' %}#header">Home</a></li>
+              <li><a href="{% url 'load_homepage' %}#about">About</a></li>
+              <li><a href="{% url 'load_homepage' %}#services">Services</a></li>
+             <!--  <li><a href="#team">Team</a></li>-->
+              <li><a href="{% url 'load_homepage' %}#contact">Contact</a></li>
+            </ul>
+          </nav><!-- .nav-menu -->
+
+          <a href="#about" class="get-started-btn scrollto d-none d-lg-block">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">  <br><br><br>
+    
+      
+    <section class="service-banner technology-banner"  id="djcms">
+            <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">CSM</h2>
+			<div class="container custom-container service-banner-container">
+									<div class="service-banner-text-cover">
+						<h1>Extensible and Secure Django CMS</h1>
+						<p>Spericorn is a trusted Django CMS development company with a focus on time-bound project delivery while not compromising on quality.  </p>
+					</div>
+							</div>
+		</section>
+
+        <div class="tech-content-section">
+			<div class="container custom-container">
+				<div class="tech-block-cover">
+					<div class="row tech-block-wrapper">
+						<div class="col-lg-5 tech-block-img d-flex">
+							<div class="icon-shape-cover">
+								<span class="hex-icon">
+									<img src="https://www.spericorn.com/wp-content/uploads/2019/01/tech-icon-16.png" alt="">
+								</span>
+							</div>
+						</div>
+						<div class="col-lg-7 tech-details-content">
+							<div class="tech-text-cover">
+								<h1 class="tech-title">Django CMS Development </h1>
+								<p></p><p style="text-align: left;">With proven expertise in Django and Python, Spericorn is easily one of the best Django CMS development companies you can partner with for your business. Django CMS is built in Django and Python and hence it is very reliable and secure.</p>
+<p style="text-align: left;">Django CMS is an open-source content management system and has a lightweight core, which makes it easy to implement and integrate with existing systems and other popular applications. &nbsp;This is the reason why it is very popular with content managers, content editors, and website administrators. It is also popular among web developers as it can seamlessly be integrated with other applications, and it also brings many tools with it which enable developers to create brand new compatible apps.</p>
+<p style="text-align: left;">Being a trusted Django CMS development company, Spericorn ensures that the projects we deliver are with all-around perfection. Our developers offer top-notch and out-of-the-box solutions for our clients and make sure to meet global standards. Our team of certified Django CMS development experts ensures that the entire development process progress without any hassles while keeping a tight check on the quality.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tech-deatails-cover">
+										<div class="row m-0">
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Security</h3>
+										<p>Being built on Django and Python, Django CMS boasts of maximum web security features, and this is the reason why many banks and organisations for whom security is top-most priority use it.
+
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Admin UI</h3>
+										<p>Django CMS has a great user interface. The admin UI of Django CMS is clutter-free and is cleaner and better than that of official Django’s, and even a new user won’t have any difficulties in getting used to it.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Templates</h3>
+										<p>Django CMS uses the Django template system, which means it is easy to integrate an existing Django project with the Django CMS. Creating new templates are also easy with a little learning curve.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Publisher Tools</h3>
+										<p>With its plethora of integrated tools, Django CMS makes publishing simple. Besides the easy content editing feature (just a double click), it also handles menu hierarchy, structure and page creation.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Community</h3>
+										<p>Django CMS has exceptional documentation just like Django. The large community of Django CMS supported by enthusiastic developers provide a good amount of plugins, which makes working with Django CMS even easier. 
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Longevity</h3>
+										<p>Many a custom web applications can easily be integrated in the Django CMS, which makes it easily extensible. Also a Django CMS site can be upgraded many years into the future.
+
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Multilingual</h3>
+										<p>Django CMS is multilingual by default. Since it is created for multilingual publishing, it is an ideal option for businesses that has operations in multiple countries where the need for websites in multiple language is imperative.
+</p>
+									</div>
+								</div>
+															<div class="col-lg-4 col-md-6 tech-deatails-block">
+									<div class="tech-deatails-card">
+										<h3>Simple &amp; Robust</h3>
+										<p>The main attraction of the Django CMS is its simplicity of functions but it is also quite robust and this is the reason why many big brand and organisations like L’Oreal, National Geography and Parrot among others have opted to use it.
+
+</p>
+									</div>
+								</div>
+													</div>
+				 
+
+									</div>
+			</div>
+		</div>
+
+
+    <section class="service-banner technology-banner"  id="wp">
+        <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">CSM</h2>
+        <div class="container custom-container service-banner-container">
+                                <div class="service-banner-text-cover">
+                    <h1>Adaptable and Expressive WordPress</h1>
+                    <p>Spericorn is a  WordPress development company with vast experience in helping customers make the most of it.</p>
+                </div>
+                        </div>
+    </section>
+
+    <div class="tech-content-section">
+        <div class="container custom-container">
+            <div class="tech-block-cover">
+                <div class="row tech-block-wrapper">
+                    <div class="col-lg-5 tech-block-img d-flex">
+                        <div class="icon-shape-cover">
+                            <span class="hex-icon">
+                                <img src="https://www.spericorn.com/wp-content/uploads/2019/01/tech-icon-15.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 tech-details-content">
+                        <div class="tech-text-cover">
+                            <h1 class="tech-title">WordPress Development </h1>
+                            <p></p><p style="text-align: left;"><span style="font-weight: 400;">WordPress is a free and open-source content management system (CMS) based on PHP and MySQL. Plugin architecture and a template system are their main features. Though it is most associated with blogging, it also supports other types of web content including more traditional mailing lists and forums, media galleries, and online stores, which are leveraged by WordPress development companies to give its clients a good web experience.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Unlike its competitors like Joomla or Drupal, WordPress allows its users to set up a site with ease without any knowledge of codes or programming. Nevertheless, it will not be possible for a beginner to set up a commercially viable website for a business using WordPress without the help of a WordPress development company, and this is where Spericorn with its vast experience in WordPress development can make a difference for you.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">WordPress offers users unlimited theme templates, plugins, and other extended features and functionalities for creating impressive websites to suit their business needs. A report says that as of March 2017, WordPress had over 55,000 plugins available – no wonder it is one platform that powers close to 30% of all the new websites created.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Nonetheless, it would take the expertise of a well-versed WordPress development company like Spericorn to help you make the maximum out of this wonderful web building platform. &nbsp;&nbsp;</span></p><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-deatails-cover">
+                                    <div class="row m-0">
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>User-friendly</h3>
+                                    <p>WordPress, with its vast supply of theme templates and plugins, is easy to use even for beginners.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Take Control of Your Website</h3>
+                                    <p>You can make updates to your website from anywhere in the world as long as you’re connected to the Internet – all you need is a login and password.
+
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Flexible Customisation</h3>
+                                    <p>WordPress, with its multiple theme options and a never-ending supply of plugins, you can customise your website according to the changing needs of your business.</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Cost Effective</h3>
+                                    <p>Because it’s very easy for you to update and maintain a WordPress-based website, you need not worry about hiring a designer every time you want to make changes to the content. This makes a WordPress website extremely cost-effective.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Enables Aggressive Content Marketing</h3>
+                                    <p>As you can update the contents of your website in a breeze anytime and how many ever times you need, WordPress is ideal for aggressive content marketing.</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Responsive Design</h3>
+                                    <p>Studies have shown that the larger chunk of traffic to your website doesn’t come from traditional desktop computers anymore, and WordPress provides you with responsive web designs.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Darling to Search Engines</h3>
+                                    <p>WordPress has inbuilt SEO optimisation plugins that allow your website to rank higher on popular search engines.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> SMO-friendly</h3>
+                                    <p>Seamless social media integration is yet another advantage of WordPress, and this makes it an ideal platform for businesses with the potential for extensive growth in future. </p>
+                                </div>
+                            </div>
+                                                </div>
+             
+
+                                </div>
+        </div>
+    </div>
+
+   
+
+  </main><!-- End #main -->
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>INFINITYFOX<span></span></h3>
+            <p>
+                2nd floor, Carnival<br>
+                phase 1 Infopark<br> 
+                Kakanad, Kochi,
+                kerala
+                Pin 682042 <br><br>
+              <strong>Phone:</strong> <br>
+              <strong>Email:</strong>&nbsp;infinityfox@gmail.com
+            </p>
+          </div>
+
+          
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+             <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+            
+         <br> &copy; Copyright @ 2022  All Rights Reserved.<strong>&nbsp;&nbsp;Infinityfox Technologies</strong>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

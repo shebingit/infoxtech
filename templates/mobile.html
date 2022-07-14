@@ -1,0 +1,650 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>INFINITYFOX TECHNOLOGIES</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/logo.jpeg' %}" rel="icon">
+  <link href="{% static 'img/logo.jpeg' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+<!-- Script File -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Presento - v1.1.1
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+
+
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+  section
+  {
+    margin-top: 0vh;
+  }
+    .service-banner.technology-banner {
+      margin-top: 4vh;
+    }
+    @media (max-width: 991px)
+    {
+    .service-banner.technology-banner {
+      margin-top:3vh;
+      background-image: none;
+      background-color: #f1f1f1;
+      min-height: 340px;
+    }
+}
+
+.tech-content-section {
+    width: 100%;
+    padding-bottom:30px;
+}
+.tech-content-section .tech-block-cover {
+  width: 100%;
+  margin-top: -15px;
+  background-color: #fff;
+}
+.tech-content-section .tech-block-cover .tech-block-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+.tech-content-section .tech-block-img::after {
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url(static/img/hero-bg.jpg);
+}
+.tech-content-section .tech-block-img {
+  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 991px)
+{
+.tech-content-section .tech-block-img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+.tech-content-section .tech-block-img .icon-shape-cover {
+  height: 360px;
+  width: 310px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/hex.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+body {
+  font: 16px/1.4 Arial,Helvetica,sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-10 d-flex align-items-center">
+          <h1 class="logo mr-auto"><a href="home.html"><span><img class="img-fulid" src="{% static 'img/logo.jpeg' %}" class="img-fulid" style="width:30vh;"></span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="{% url 'load_homepage' %}#header">Home</a></li>
+              <li><a href="{% url 'load_homepage' %}#about">About</a></li>
+              <li><a href="{% url 'load_homepage' %}#services">Services</a></li>
+             <!--  <li><a href="#team">Team</a></li>-->
+              <li><a href="{% url 'load_homepage' %}#contact">Contact</a></li>
+            </ul>
+          </nav><!-- .nav-menu -->
+
+          <a href="#about" class="get-started-btn scrollto d-none d-lg-block">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+  
+
+  <main id="main">  <br><br><br>
+    
+    <section class="service-banner technology-banner"  id="android">
+        <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Mobile App Development</h2>
+        <div class="container custom-container service-banner-container">
+                                <div class="service-banner-text-cover">
+                    <h1>Customisable and Innovative Android</h1>
+                    <p> Leverage on the benefits of partnering with the best  Android application development company</p>
+                </div>
+                        </div>
+    </section>
+
+    <div class="tech-content-section">
+        <div class="container custom-container">
+            <div class="tech-block-cover">
+                <div class="row tech-block-wrapper">
+                    <div class="col-lg-5 tech-block-img d-flex">
+                        <div class="icon-shape-cover">
+                            <span class="hex-icon">
+                                <img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-12.png" alt="android application development company in united states">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 tech-details-content">
+                        <div class="tech-text-cover">
+                            <h1 class="tech-title">Android Development </h1>
+<p style="text-align: left;"><span style="font-weight: 400;">Touted as one of the most technically competent Android application development companies, we have a unique approach towards the projects we take up. Being a responsible Android development company, we dynamically consult with our clients to understand all their requirements and we challenge ourselves to deliver them with the most interactive app with user-friendly interface and dynamic design elements.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">As a successful Android application development company, the top industries we have catered to include entertainment, banking and gaming.</span></p><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-deatails-cover">
+                                    <div class="row m-0">
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Regular Updates</h3>
+                                    <p>Google makes sure to make major incremental upgrades to Android on a yearly basis to make the OS more enhanced. The updates can be installed on devices over-the-air. The latest major release is 9 ‘Pie’.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Affordability</h3>
+                                    <p>It is a known fact that most of the Android devices are much cheaper than devices that run OS developed by their competitors. This is a good reason for you to have an Android app for your business because most of your customers are likely to have an Android device.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Open Source</h3>
+                                    <p>The Android platform is open source and is backed by a very enthusiastic Android developer community. This makes Android a comparatively cheaper option for you. </p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Customisable UI</h3>
+                                    <p>Since Google has been constantly working to make the user interface of Android as flexible and customisable as possible, the Android is loaded with a gamut of customisable widgets that could be leveraged to make your app as interactive and appealing.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>High ROI on Investment</h3>
+                                    <p>Since the development cost of Android is comparatively cheaper, enterprises gain a higher return on investment (ROI) with their smart app.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Multitasking</h3>
+                                    <p>The customisable UI of Android makes it ideal for multitasking. Users can open several applications at the same time and still manage them all.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> App Distribution</h3>
+                                    <p>Unlike its competitors, Android apps can easily be published in the various third-party app stores, and you don’t have to always rely on the Google Play store.</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>ROM Modification</h3>
+                                    <p>Google allows its device manufacturers to modify the ROM of the devices and make it customised for their needs. Nevertheless, all Android apps run in these devices without any flaw.
+</p>
+                                </div>
+                            </div>
+                                                </div>
+             
+
+                                </div>
+        </div>
+    </div>   
+        
+
+    <section class="service-banner technology-banner" id="ios">
+        <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Mobile App Development</h2>
+        <div class="container custom-container service-banner-container">
+                                <div class="service-banner-text-cover">
+                    <h1>Fluidic and Secured iOS</h1>
+                    <p> A trusted iOS application development company that caters to the app needs of your business.</p>
+                </div>
+                        </div>
+    </section>
+
+    <div class="tech-content-section">
+        <div class="container custom-container">
+            <div class="tech-block-cover">
+                <div class="row tech-block-wrapper">
+                    <div class="col-lg-5 tech-block-img d-flex">
+                        <div class="icon-shape-cover">
+                            <span class="hex-icon">
+                                <img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-13.png" alt="ios app development company in united states">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 tech-details-content">
+                        <div class="tech-text-cover">
+                            <h1 class="tech-title">iOS Development Company</h1>
+                            <p></p><p style="text-align: left;"><span style="font-weight: 400;">iOS has the distinction of being the second most popular mobile operating system globally after Android, </span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">As a top-class iOS application development company, Spericorn leverages on the mobile operating system created and developed by Apple Inc. exclusively for its hardware. It is the operating system that powers many of the company's mobile devices, including the iPhone, iPad and iPod Touch.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">One unique way in which the<a href="https://en.wikipedia.org/wiki/IOS"> iOS</a> trumps over all its competitors is with their high-quality fluidic design elements for both their software and hardware, and the assurance of security of the software. Regular update releases for the iOS made by Apple Inc makes it a very robust operating system for your devices. As a top-rated iOS development company, we make the apps on Swift, which were previously made using Obj C.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Having successfully delivered many server support based projects to our iOS clients from different industry verticals from around the globe, Spericorn is the best <em>iOS application development company in united states,</em> that you can approach for your business apps needs because we follow an uncompromising approach towards adhering to all the set industry standards.</span></p><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-deatails-cover">
+                                    <div class="row m-0">
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Enterprise’s First Choice</h3>
+                                    <p>Through the ages, we have seen that iOS is the first preference for most businesses to launch their apps because Apple has the reputation for offering top-end devices that run iOS.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>More Paying Clients</h3>
+                                    <p>Despite iOS being only the second most used operating system, it still has more users willing to pay for an app or in-app purchases.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>High Security</h3>
+                                    <p>iOS is packed with strong shields for virus, bloatware and malware, making it a perfect choice for business apps development. </p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>High ROI</h3>
+                                    <p>iOS users are aware of the fact that it is not easy for an app to get accepted in the App Store and hence when they see a business app in there, they know that the company is worth the price.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Timely Updates</h3>
+                                    <p>It is a known fact that iOS devices receive software updates much faster than their competitors.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Smooth and Fast UI</h3>
+                                    <p>Anyone who has used a product from Apple Inc knows about the superior UI experience it provides. The iOS interfaces are known not just for its fluidic design but also faster response.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Tech-savvy Customers</h3>
+                                    <p>Apple products attract more tech-savvy customers who prefer advanced technology to meet their goals and hence an iOS app gives you great opportunity to deliver your brand.
+
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Best Customer Support</h3>
+                                    <p>The best-in-class customer support provided by Apple Inc. ensures that their customers remain happy and connected to their devices. This is one more reason why an iOS app is a good choice for you.
+</p>
+                                </div>
+                            </div>
+                                                </div>
+             
+
+                                </div>
+        </div>
+    </div>
+
+
+    <section class="service-banner technology-banner" id="ionic">
+        <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Mobile App Development</h2>
+        <div class="container custom-container service-banner-container">
+                                <div class="service-banner-text-cover">
+                    <h1>Fast and Advanced Ionic</h1>
+                    <p>Being the best Ionic application development company Spericorn powers the app requirements of start-ups.</p>
+                </div>
+                        </div>
+    </section>
+
+    <div class="tech-content-section">
+        <div class="container custom-container">
+            <div class="tech-block-cover">
+                <div class="row tech-block-wrapper">
+                    <div class="col-lg-5 tech-block-img d-flex">
+                        <div class="icon-shape-cover">
+                            <span class="hex-icon">
+                                <img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-14.png" alt="ionic application development company in united states">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 tech-details-content">
+                        <div class="tech-text-cover">
+                            <h1 class="tech-title">Ionic Development </h1>
+                           
+<p style="text-align: left;"><span style="font-weight: 400;">Ionic is a very popular open-source cross-platform mobile development technology stack used for highly interactive hybrid mobile apps using Web technologies like&nbsp;CSS,&nbsp;HTML5, and&nbsp;Sass. The initial version was built on top of&nbsp;AngularJS&nbsp;and&nbsp;Apache Cordova but the more recent releases, known as Ionic 3 or simply ‘Ionic’ is built on&nbsp;Angular. Ionic provides tools and services for developing hybrid mobile apps Apps, which are then distributed through native&nbsp;app stores&nbsp;to be installed on devices. The software uses Cordova plugins to gain access to host operating system’s features such as Camera, GPS, Flashlight, etc. enabling developers in Ionic application development companies to build apps that can then be customized for Android, iOS, Windows, or modern browsers. Ionic’s main focus is on the look and feel, and UI interaction of mobile apps built using the software.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Being the best <em>Ionic application development company in the united states</em>, the tech-savvy experts at Spericorn build hybrid applications including native functionalities, exhaustive gestures, and customizable tools to enhance user-friendliness. The main advantage of Ionic is the simplicity that comes with developing an app once, rather than multiple times for separate devices. The functionalities of its framework also enable the development to be fast and cost-efficient while reducing the need for maintenance.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Swift advancements in technology have ushered in an era that is rapidly changing, adopting and inventing newer and better ways to do things.&nbsp;As more and more people are now using mobile for everything from their daily calendars to making online purchases, Spericorn, as an Ionic application development company, realises the need for quick and efficient ways to develop mobile apps which provides a consistent look and feel across different mobile platforms.&nbsp;&nbsp; </span></p>
+<p style="text-align: left;"></p><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-deatails-cover">
+                                    <div class="row m-0">
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Rapid App Development</h3>
+                                    <p>As there’s no need to writes codes from the scratch on Ionic; developers can build apps at a much faster pace.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Hybrid App Development</h3>
+                                    <p>With Ionic, developers can build apps that have the native feel and can then be customized for Android, iOS, Windows, or modern browsers.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Default UI</h3>
+                                    <p>Besides regular elements like buttons and navigation, it also includes form inputs, lists, cards, sliding boxes and many more.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Cost Effective</h3>
+                                    <p>Since Ionic eliminates the need to build apps separately for the different native app stores, customers can cut down on development costs.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Community Support</h3>
+                                    <p>Ionic framework is well documented and has a huge and active community online who can help you work around any issues you face while using the software.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Easy Testing</h3>
+                                    <p>Testing is crucial for app development and with Ionic, developers can test in apps easily on a desktop or mobile browser or a simulator.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Feature-rich</h3>
+                                    <p>Features of Ionic include typography, mobile components, an extensible base theme, and interactive paradigms.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> ES6 Supported</h3>
+                                    <p>Browser support is an important aspect in the case of hybrid mobile apps and ES6 allows developers to run an application on any browser regardless of compatibility.
+</p>
+                                </div>
+                            </div>
+                                                </div>
+             
+
+                                </div>
+        </div>
+    </div>
+
+
+    <section class="service-banner technology-banner" id="rna">
+        <h2 class="text-center mb-5" style="color: rgba(12,121,207,.46);">Mobile App Development</h2>
+        <div class="container custom-container service-banner-container">
+                                <div class="service-banner-text-cover">
+                    <h1>Fast and Adaptive React Native</h1>
+                    <p>Best React Native application development company to power up your mobile apps.</p>
+                </div>
+                        </div>
+    </section>
+
+    <div class="tech-content-section">
+        <div class="container custom-container">
+            <div class="tech-block-cover">
+                <div class="row tech-block-wrapper">
+                    <div class="col-lg-5 tech-block-img d-flex">
+                        <div class="icon-shape-cover">
+                            <span class="hex-icon">
+                                <img src="https://www.spericorn.com/wp-content/uploads/2017/11/tech-5.png" alt="react native development company in united states">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 tech-details-content">
+                        <div class="tech-text-cover">
+                            <h1 class="tech-title">React Native Development </h1>
+                           
+<p style="text-align: left;"><span style="font-weight: 400;">Just like with React, React Native applications are written using a mixture of JavaScript and XML-esque markup, known as JSX, and then, under the hood, the React Native ‘bridge’ invokes the native rendering APIs in Objective-C (in case of iOS) or Java (in case of Android). Thus your application will render not using web views but real mobile UI components and will look like any other mobile app. Also, React Native apps can access features of your device like the camera, or the user’s location. The software supports both iOS and Android as of now and has the potential to expand to future platforms as well.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Being the best React Native application development company, Spericorn provides services of highly talented developers who create inspiring apps with great innovation and dedication. React Native is highly preferred in the mobile app development arena for both Android and iOS app building because of its cross-platform building and lesser development time. With our highly talented developers, Spericorn has established itself as a leader among React Native application development companies.</span></p><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-deatails-cover">
+                                    <div class="row m-0">
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Cross-platform</h3>
+                                    <p>REACT Native apps can be developed using a single codebase for both Android and iOS platforms.</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Improves Efficiency</h3>
+                                    <p> Using React Native can bolster the efficiency of a developer as it can interface with third-party plugins.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Community Support</h3>
+                                    <p> There is a huge team of enthusiastic JS and native developers willing to share their knowledge and expertise and huge catalogues of freely available components.
+
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Cost Effective</h3>
+                                    <p>React Native uses the same code for deployment on iOS as well as on Android, which means a huge saving in development time and cost.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>Live Reload</h3>
+                                    <p>React Native has an interesting feature of ‘live reload’ that lets developers immediately see the results of the latest changes they have made to the code.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Superfast</h3>
+                                    <p>React Native architecture is very well tuned to mobile devices and compared to hybrid technologies used for cross-platform in the past. 
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3>. Feature-rich</h3>
+                                    <p>The modular and intuitive interface of React Native makes it easier to create updates and upgrades to mobile applications.
+</p>
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 col-md-6 tech-deatails-block">
+                                <div class="tech-deatails-card">
+                                    <h3> Native Feel</h3>
+                                    <p>Because of JavaScript interactions with the native environment, React Native delivers a platform-specific UI that looks and feels native.
+</p>
+                                </div>
+                            </div>
+                                                </div>
+             
+
+                                </div>
+        </div>
+    </div>
+
+
+
+
+  </main><!-- End #main -->
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>INFINITYFOX<span></span></h3>
+            <p>
+                2nd floor, Carnival<br>
+                phase 1 Infopark<br> 
+                Kakanad, Kochi,
+                kerala
+                Pin 682042 <br><br>
+              <strong>Phone:</strong> <br>
+              <strong>Email:</strong>&nbsp;infinityfox@gmail.com
+            </p>
+          </div>
+
+          
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+            
+         <br> &copy; Copyright @ 2022  All Rights Reserved.<strong>&nbsp;&nbsp;Infinityfox Technologies</strong>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
